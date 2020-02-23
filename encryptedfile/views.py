@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
@@ -7,7 +8,7 @@ from django.views.generic.list import ListView
 from .models import EncryptedFile
 from .forms import EncryptedFileForm
 
-class FileListView(ListView):
+class FileListView(LoginRequiredMixin,ListView):
     """ list view of encrypted files """
     model = EncryptedFile
     template_name="encryptedfile/file_list.html"
@@ -17,7 +18,7 @@ class FileListView(ListView):
         return queryset
 
 
-class AddEncryptedField(CreateView):
+class AddEncryptedField(LoginRequiredMixin,CreateView):
     """ create view for uploading files """
     template_name='encryptedfile/add_file.html'
     form_class = EncryptedFileForm
