@@ -11,6 +11,7 @@ class EncryptedFile(models.Model):
     user= models.ForeignKey(MyUser, on_delete=models.CASCADE)
     file_name=models.CharField(max_length=100)
     file_url = models.FileField(upload_to=user_file_upload)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.file_name

@@ -130,4 +130,4 @@ MEDIA_ROOT=os.path.join(BASE_DIR, 'static_cdn', 'media')
 
 
 AUTH_USER_MODEL='customuser.MyUser'
-LOGIN_URL="/login/"
+LOGIN_URL="/auth/login"
