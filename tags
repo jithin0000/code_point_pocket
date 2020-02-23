@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	pocket/settings.py	/^ALLOWED_HOSTS = []$/;"	v
+AUTH_PASSWORD_VALIDATORS	pocket/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+AUTH_USER_MODEL	pocket/settings.py	/^AUTH_USER_MODEL='customuser.MyUser'$/;"	v
+BASE_DIR	pocket/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	v
+CityzenConfig	cityzen/apps.py	/^class CityzenConfig(AppConfig):$/;"	c
+CustomuserConfig	customuser/apps.py	/^class CustomuserConfig(AppConfig):$/;"	c
+DATABASES	pocket/settings.py	/^DATABASES = {$/;"	v
+DEBUG	pocket/settings.py	/^DEBUG = True$/;"	v
+INSTALLED_APPS	pocket/settings.py	/^INSTALLED_APPS = [$/;"	v
+LANGUAGE_CODE	pocket/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+MIDDLEWARE	pocket/settings.py	/^MIDDLEWARE = [$/;"	v
+Migration	customuser/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+MyUser	customuser/models.py	/^class MyUser(AbstractBaseUser):$/;"	c
+MyUserManager	customuser/models.py	/^class MyUserManager(BaseUserManager):$/;"	c
+REQUIRED_FIELDS	customuser/models.py	/^    REQUIRED_FIELDS=['email', 'username']$/;"	v	class:MyUser
+ROOT_URLCONF	pocket/settings.py	/^ROOT_URLCONF = 'pocket.urls'$/;"	v
+SECRET_KEY	pocket/settings.py	/^SECRET_KEY = '#=*$-c7ke%c52kjlbtd62gt(kv^ry^ot*9*jqubomo^#*gn$u('$/;"	v
+STATIC_URL	pocket/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+TEMPLATES	pocket/settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	pocket/settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+USERNAME_FIELD	customuser/models.py	/^    USERNAME_FIELD='adhar_id'$/;"	v	class:MyUser
+USE_I18N	pocket/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	pocket/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	pocket/settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	pocket/settings.py	/^WSGI_APPLICATION = 'pocket.wsgi.application'$/;"	v
+__str__	customuser/models.py	/^    def __str__(self):$/;"	m	class:MyUser	file:
+adhar_id	customuser/models.py	/^    adhar_id = models.IntegerField(unique=True)$/;"	v	class:MyUser
+application	pocket/asgi.py	/^application = get_asgi_application()$/;"	v
+application	pocket/wsgi.py	/^application = get_wsgi_application()$/;"	v
+create_superuser	customuser/models.py	/^    def create_superuser(self, email, username, adhar_id, password=None):$/;"	m	class:MyUserManager
+create_user	customuser/models.py	/^    def create_user(self, email, username, adhar_id, password=None):$/;"	m	class:MyUserManager
+dependencies	customuser/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+email	customuser/models.py	/^    email = models.EmailField(max_length=255, unique=True)$/;"	v	class:MyUser
+fields	customuser/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+has_module_perms	customuser/models.py	/^    def has_module_perms(self, app_label):$/;"	m	class:MyUser
+has_perm	customuser/models.py	/^    def has_perm(self, perm, obj=None):$/;"	m	class:MyUser
+initial	customuser/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+is_active	customuser/models.py	/^    is_active=models.BooleanField(default=True)$/;"	v	class:MyUser
+is_admin	customuser/models.py	/^    is_admin=models.BooleanField(default=False)$/;"	v	class:MyUser
+is_staff	customuser/models.py	/^    is_staff=models.BooleanField(default=False)$/;"	v	class:MyUser
+main	manage.py	/^def main():$/;"	f
+name	cityzen/apps.py	/^    name = 'cityzen'$/;"	v	class:CityzenConfig
+name	customuser/apps.py	/^    name = 'customuser'$/;"	v	class:CustomuserConfig
+name	customuser/migrations/0001_initial.py	/^            name='MyUser',$/;"	v	class:Migration
+objects	customuser/models.py	/^    objects = MyUserManager()$/;"	v	class:MyUser
+operations	customuser/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+options	customuser/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+urlpatterns	pocket/urls.py	/^urlpatterns = [$/;"	v
+username	customuser/models.py	/^    username = models.CharField(max_length=255)$/;"	v	class:MyUser
